@@ -2,88 +2,92 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deakin University</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css"/>
-    <style>
-        /* Custom styles go here */
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deakin University</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+  <script src="template-loader.js"></script>
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Deakin University</a>
-        <!-- Navbar toggler for responsive design -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Programs</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
+  <!-- Navbar -->
+  <div id="navbar"></div>
+
+  <!-- Search -->
+  <div class="container search-form">
+    <form action="#" method="GET">
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search..." aria-label="Search"
+          aria-describedby="search-addon">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="submit">Search</button>
         </div>
-    </nav>
+      </div>
+    </form>
+  </div>
 
-    <!-- Main Content -->
-    <div class="container mt-4">
-        <!-- Main Features Section -->
-        <section>
-            <h2>Welcome to Deakin University</h2>
-            <p>We are committed to providing a modern, user-friendly, and responsive website experience for our students, staff, and faculty members.</p>
-        </section>
-
-        <!-- News Section -->
-        <section>
-            <h3>Latest News</h3>
-            <!-- News Cards or List Goes Here -->
-        </section>
-
-        <!-- Student Portal Section -->
-        <section>
-            <h3>Student Portal</h3>
-            <!-- Student Portal Content Goes Here -->
-        </section>
-
-        <!-- Staff Portal Section -->
-        <section>
-            <h3>Staff Portal</h3>
-            <!-- Staff Portal Content Goes Here -->
-        </section>
-
-        <!-- Programs Section -->
-        <section>
-            <h3>Our Programs</h3>
-            <!-- Program Information Goes Here -->
-        </section>
+  <!-- Cover Section -->
+  <section class="cover-section">
+    <div class="container">
+      <h2>Welcome to Deakin University</h2>
+      <p>Explore endless opportunities for learning and growth.</p>
     </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer mt-auto py-3 bg-light">
-        <div class="container">
-            <span class="text-muted">© 2024 Deakin University</span>
+  <!-- Main Content -->
+  <div class="container main-content">
+    <div class="row equal-height-row">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img" style="background-image: url('./images/diploma.webp');"></div>
+          <div class="card-body">
+            <h5 class="card-title">Diploma</h5>
+            <p class="card-text">
+              Our diploma programs offer practical training and hands-on experience to prepare you for the workforce.
+              Explore a range of diploma courses tailored to your interests and career aspirations.
+              With flexible scheduling options, our diploma programs are designed to fit your busy lifestyle.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
         </div>
-    </footer>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img" style="background-image: url('./images/bachelors.webp');"></div>
+          <div class="card-body">
+            <h5 class="card-title">Undergraduate</h5>
+            <p class="card-text">
+              Embark on a transformative journey of learning and discovery with our undergraduate degrees.
+              Our undergraduate programs provide a solid foundation in your chosen field and opportunities for specialization.
+              "Prepare for future leadership roles and make a difference in your community through our undergraduate courses.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-img" style="background-image: url('./images/masters.webp');"></div>
+          <div class="card-body">
+            <h5 class="card-title">Postgraduate</h5>
+            <p class="card-text">
+              Take your expertise to the next level with our postgraduate studies, designed for professionals seeking advanced knowledge.
+              Our postgraduate programs offer specialized training and research opportunities to propel your career forward.
+              Join a vibrant academic community and engage in cutting-edge research with our postgraduate degrees.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap JS (Optional, for certain components) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  <!-- Footer -->
+  <div id="footer"></div>
 
-</html>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body
